@@ -6,6 +6,9 @@ import User from "../database/models/user.model";
 import { connectToDatabase } from "../database/mongoose";
 import { handleError } from "../utils";
 
+// we have to sync data between a clerk user and a newly created db user
+// why is that? so we store images for each user in the db
+// we will do that using a concept called "Webhooks"
 // CREATE
 export async function createUser(user: CreateUserParams) {
   try {

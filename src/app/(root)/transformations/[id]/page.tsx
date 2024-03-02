@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Transformations({params}) {
+function Transformations() {
   return (
     <div>Transformations</div>
   )
