@@ -1,3 +1,6 @@
+// models class have access to all other models
+// the model class is used to create a new model
+
 import { Schema, model, models } from "mongoose";
 
 const UserSchema = new Schema({

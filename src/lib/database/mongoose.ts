@@ -1,3 +1,4 @@
+// here we establish a connection to our database.
 import mongoose, { Mongoose } from 'mongoose';
 
 const MONGODB_URL = process.env.MONGODB_URL;
