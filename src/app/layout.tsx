@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const IBMPLEX = IBM_Plex_Sans({
 	subsets: ["latin"],
 	weight: ["400", "500", "600", "700"],
-	variable: "--font-ibm-plex",
+	variable: "--font-ibm-plex", // here we defined CSS variable name
 });
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default function RootLayout({
 			}}
 		>
 			<html lang="en">
-				<body className={cn("font-IBMPLEX antialiased", IBMPLEX.variable)}>
+				<body className={cn("font-IBMPlex antialiased", IBMPLEX.variable)}>
 					{children}
 				</body>
 			</html>
